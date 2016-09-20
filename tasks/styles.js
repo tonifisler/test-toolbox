@@ -63,7 +63,8 @@ export const stylesLint = () => {
         ],
         {
           syntax: scss
-        }));
+        }
+      ));
 };
 export const stylesLintTask = gulp.task('styles:lint', stylesLint);
 
