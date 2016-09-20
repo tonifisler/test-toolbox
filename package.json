@@ -9,7 +9,7 @@
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
-    "*": "gulp styles:lint --production"
+    "*": "gulp styles:lint --production && exit 1"
   },
   "pre-push": [
     "lint-staged"
