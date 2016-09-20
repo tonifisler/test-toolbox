@@ -6,10 +6,13 @@
     "jquery": "global:jQuery"
   },
   "scripts": {
-    "test": "echo \"Error: I SHOULD FAIL LOLOLOLOLOL \" && exit 1"
+    "lint": "lint-staged"
+  },
+  "lint-staged": {
+    "*": "gulp styles:lint --production"
   },
   "pre-push": [
-    "test"
+    "lint"
   ],
   "dependencies": {
     "bootstrap-sass": "~3.3.7",
