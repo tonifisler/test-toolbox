@@ -58,7 +58,8 @@ export const stylesLint = () => {
         [
           stylelint(),
           reporter({
-            clearMessages: true
+            clearMessages: true,
+            throwError: yargs.argv.production
           })
         ],
         {
