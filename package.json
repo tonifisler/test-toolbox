@@ -6,13 +6,13 @@
     "jquery": "global:jQuery"
   },
   "scripts": {
-    "lint": "lint-staged"
+    "lint-staged": "lint-staged"
   },
   "lint-staged": {
     "*": "gulp styles:lint --production"
   },
   "pre-push": [
-    "lint"
+    "lint-staged"
   ],
   "dependencies": {
     "bootstrap-sass": "~3.3.7",
